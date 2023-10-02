@@ -1,9 +1,7 @@
 package org.NNS.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Department {
@@ -19,6 +17,17 @@ public class Department {
     public Department()
     {
     }
+    @OneToMany(targetEntity=Teacher.class, cascade = {CascadeType.ALL})
+    private List teacherList;
+
+    public List getTeacherList() {
+        return teacherList;
+    }
+
+    public void setTeacherList(List teacherList) {
+        this.teacherList = teacherList;
+    }
+
     public int getDid() {
         return did;
     }

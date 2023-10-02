@@ -10,8 +10,7 @@ public class Teacher {
     private String salary;
     private String Teachername;
 
-    @ManyToOne
-    private Department department;
+
     public Teacher(int tit, String salary, String teachername) {
         super();
         this.tit = tit;
@@ -20,11 +19,7 @@ public class Teacher {
     public Teacher()
     {}
 
-    public Department getDep() {
-        return department;	}
-    public void setDep(Department department) {
-        this.department = department;
-    }
+
     public int getTit() {
         return tit;
     }

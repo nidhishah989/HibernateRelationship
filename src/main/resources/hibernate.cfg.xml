@@ -10,8 +10,8 @@
         <!-- Database connection settings -->
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="connection.url">jdbc:mysql://localhost/userdb</property>
-        <property name="connection.username"></property>
-        <property name="connection.password"></property>
+        <property name="connection.username">nidhi</property>
+        <property name="connection.password">1890</property>
 
         <!-- MySQL DB dialect -->
         <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
